@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles/style.css">
+
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center;}
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="section1">
+      <div class="section-title color-white">
+        Learn to code by watching others
+      </div>
+  
+      <div class="section-subtitle color-grayish">
+        <pre>
+          See how experienced developers solve
+          problems in real-time. Watching 
+          scripted tutorials is great, but 
+          understanding how developers think is 
+          invaluable.
+        </pre>
+      </div>
+    </div> 
+  
+    <div class="section2">
+      <div class="price-info">
+        <p>
+          <span class="color-white">Try it free 7 days</span> 
+          <span class="color-grayish">
+            then <br class="br">$20/mo. thereafter 
+          </span>
+        </p>
+      </div>
+  
+      <form action="#" id="form" class="form" method="GET">
+        <input type="text" name="name" required class="form__style" id="form__style1" placeholder="First Name"> 
+        <img src="./images/icon-error.svg" id="error__image1" alt="Error icon">
+        <div class="form__error" id="form__error1"><em>First Name cannot be empty</em></div>
+        <input type="text" name="lname" required class="form__style" id="form__style2" placeholder="Last Name"> 
+        <img src="./images/icon-error.svg" id="error__image2" alt="Error icon">
+        <div class="form__error" id="form__error2"><em>Last Name cannot be empty</em></div>
+        <input type="email" name="email" required class="form__style" id="form__style3" placeholder="Email Address"> 
+        <img src="./images/icon-error.svg" id="error__image3" alt="Error icon">
+        <div class="form__error" id="form__error3"><em>Looks like this not an email</em></div>
+        <input type="password" name="password" required class="form__style" id="form__style4" placeholder="Password"> 
+        <img src="./images/icon-error.svg" id="error__image4" alt="Error icon">
+        <div class="form__error" id="form__error4"><em>Password cannot be empty</em></div>
+        <input type="submit" value="CLAIM YOUR FREE TRIAL" class="try" onclick="changestyle(true)">
+        <p class="form__info">clicking the button, you are agreeing to our <a class="form__red-alert">Terms and Services</a></p>
+      </form> 
+    </div>
+  </div>
+  
+  <script>
+    
+    function changestyle(number) {
+      if(number === true) {
+        if(document.getElementsByClassName("form__style").required = true) {
+          for(let n = 1; n <= 4; n++) {
+            document.getElementById(`error__image${n}`).style.display = "flex";
+            document.getElementById(`form__error${n}`).style.display = "block";
+            document.getElementById(`form__style${n}`).style.border = "solid 1px hsl(0, 100%, 74%)";
+          }
+        }
+      }
+    }
+  </script>
+
+  <footer>
+    <div class="attribution">
+      <div>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</div> 
+      <div>Coded by <a href="https://github.com/fullstackdev-pro">Ismoil</a>.</div>
+    </div>
+  </footer>
+</body>
+</html>

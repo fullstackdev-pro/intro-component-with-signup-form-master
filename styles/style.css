@@ -1,0 +1,197 @@
+body {
+    margin: 0 auto;
+    background-image: url("../images/bg-intro-mobile.png");
+    background-repeat: no-repeat;
+    background-color: hsl(0, 100%, 74%);
+}
+
+.section1,
+.section2 {
+    margin: 3rem auto;
+    width: 90%;
+}
+
+.color-white {
+    color: #ffffff;
+}
+
+.color-grayish {
+    color: hsl(246, 25%, 77%);
+}
+
+.section-title {
+    margin: 0rem 3rem;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 900;
+}
+
+.section-subtitle > pre{
+    margin: 1rem;
+    text-align: center;
+    margin-left: -3rem;
+}
+
+.price-info {
+    background-color: hsl(248, 32%, 49%);   
+    border-radius: 5px;
+}
+
+.price-info > p {
+    text-align: center;
+    padding: 1rem;
+}
+
+#form {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 0.5rem 0.5rem;
+    border-radius: 5px;
+}
+
+.form__style {
+    margin-top: 0.5rem;
+    width: 90%;
+    border: solid 1px hsl(246, 25%, 77%);
+    border-radius: 5px;
+    padding: 0.5rem;
+}
+
+#error__image1,
+#error__image2,
+#error__image3,
+#error__image4 {
+    display: none;
+    position: absolute;
+    right: 11%;
+    margin-top: -1.80rem;
+    z-index: 99;
+}
+
+.try {
+    margin-top: 0.5rem;
+    padding: 0.7rem 0;
+    font-size: 1rem;
+    font-weight: 700;
+    width: 95%;
+    border: none;
+    color: white;
+    background-color: hsl(154, 59%, 51%);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form__info {
+    margin: 0 auto;
+    padding-top: 0.5rem;
+    text-align: center;
+    font-size: 0.8rem;
+    width: 70%;
+}
+
+.form__error {
+    display: none;
+    margin-top: 0.1rem;
+    color: hsl(0, 100%, 74%);
+}
+
+.form__label1 {
+    position: absolute;
+    left: 14%;
+    z-index: 90;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+.form__label2, 
+.form__label3, 
+.form__label4 {
+    position: absolute;
+    left: 14%;
+    z-index: 90;
+    margin-top: 3.5rem;
+    font-size: 0.9rem;
+}
+
+.form__red-alert {
+    color: hsl(0, 100%, 74%);
+}
+
+.form__red-alert:hover {
+    cursor: pointer;
+}
+
+.attribution > div {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.attribution > div:hover {
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 1440px) {
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .section1 {
+        margin-top: 15rem;
+        width: 50%;
+        padding: 0 6rem 0 10rem;
+    }
+
+    .section2 {
+        width: 60%;
+        margin: 4rem 5rem 0 0;
+    }
+
+    .section-title {
+        text-align: left;
+        font-size: 3rem;
+    }
+
+    .section-subtitle > pre {
+        text-align: left;
+        color: #ffffff;
+        padding-left: 1.2rem;
+    }
+
+    .form__style {
+        margin-top: 1.3rem; 
+    }
+
+    .form {
+        width: 90%;
+    }
+
+    .form__error {
+        text-align: right;
+        margin: 1rem 1.2rem 0 0;
+    }
+
+    .price-info {
+        width: 93%;
+    }
+
+    .br {
+        display: none;
+    }
+
+    .try {
+        margin-top: 1.5rem;
+    }
+
+    .form__info {
+        color: hsl(246, 25%, 77%);
+        text-align: center;
+        margin: 0.9rem 0 2rem 4rem;
+    }
+
+    .attribution {
+        margin-top: 1.5rem;
+    }
+}
+
