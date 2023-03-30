@@ -50,11 +50,11 @@ body {
 }
 
 .form__style {
-    margin-top: 0.5rem;
+    margin-top: 1.5rem;
     width: 90%;
     border: solid 1px hsl(246, 25%, 77%);
     border-radius: 5px;
-    padding: 0.5rem;
+    padding: 0.75rem 0.5rem;
 }
 
 #error__image1,
@@ -63,17 +63,17 @@ body {
 #error__image4 {
     display: none;
     position: absolute;
-    right: 11%;
-    margin-top: -1.80rem;
+    right: 12%;
+    margin-top: -2rem;
     z-index: 99;
 }
 
 .try {
-    margin-top: 0.5rem;
+    margin-top: 1.5rem;
     padding: 0.7rem 0;
     font-size: 1rem;
     font-weight: 700;
-    width: 95%;
+    width: 94%;
     border: none;
     color: white;
     background-color: hsl(154, 59%, 51%);
@@ -82,11 +82,11 @@ body {
 }
 
 .form__info {
-    margin: 0 auto;
+    margin: 0.75rem auto;
     padding-top: 0.5rem;
     text-align: center;
     font-size: 0.8rem;
-    width: 70%;
+    width: 90%;
 }
 
 .form__error {
@@ -115,6 +115,8 @@ body {
 
 .form__red-alert {
     color: hsl(0, 100%, 74%);
+    cursor: pointer;
+    padding-left: 0.5rem;
 }
 
 .form__red-alert:hover {
@@ -131,16 +133,16 @@ body {
     cursor: pointer;
 }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1024px) {
     .container {
         display: flex;
         justify-content: space-between;
     }
 
     .section1 {
-        margin-top: 15rem;
+        margin-top: 10rem;
         width: 50%;
-        padding: 0 6rem 0 10rem;
+        padding: 0 6rem 0 6rem;
     }
 
     .section2 {
@@ -182,12 +184,15 @@ body {
 
     .try {
         margin-top: 1.5rem;
+        width: 93%;
     }
 
     .form__info {
         color: hsl(246, 25%, 77%);
         text-align: center;
-        margin: 0.9rem 0 2rem 4rem;
+        font-size: 0.85rem;
+        margin: 0.9rem 0 1rem 5rem;
+        width: 70%;
     }
 
     .attribution {
